@@ -1,0 +1,36 @@
+.search {
+  width: 486px;
+  height: 61px;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 19px;
+}
+.input {
+  width: 155px;
+  height: 38px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: white;
+}
+.input,
+.input::placeholder {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .search {
+    width: 300px;
+    height: 61px;
+   position: relative;
+left: -60px;
+
+  }
+  
+}

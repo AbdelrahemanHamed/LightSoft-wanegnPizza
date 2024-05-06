@@ -1,0 +1,200 @@
+.section7 {
+  width: 100%;
+  /* height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; */
+}
+.section7 .container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dark-mode.section7 {
+  background-color: #000;
+}
+.dark-mode.section7 .left-side-section7 h1 {
+  color: #fff;
+}
+.dark-mode.section7 .left-side-section7 p {
+  color: rgba(200, 200, 200, 1);
+}
+.left-side-section7 h1 {
+  font-size: 70px;
+  font-weight: 700;
+  font-family: Quicksand;
+  line-height: 87.5px;
+  text-align: start;
+  width: 637px;
+  height: 176px;
+  /* margin-left: 50px; */
+  color: #000;
+}
+.left-side-section7 p {
+  width: 597px;
+  height: 110px;
+  font-weight: 700;
+  font-family: Quicksand;
+  font-size: 25px;
+  color: rgba(96, 96, 96, 1);
+  /* margin-left: 50px; */
+}
+.left-side-section7 button {
+  display: block;
+  width: 400px;
+  height: 60px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  background-color: rgb(255, 140, 66);
+  outline: none;
+  border: none;
+  position: relative;
+  /* left: 300px; */
+  left: 20%;
+  top: 50px;
+  color: #fff;
+  box-shadow: 0 0 20px #ff8c42;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.left-side-section7 button:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 992px) {
+  .section7 .container {
+    flex-direction: column;
+    height: 150vh;
+  }
+  .left-side-section7 h1 {
+    font-size: 28px;
+    text-align: center;
+    height: fit-content;
+  }
+  .left-side-section7 p {
+    /* width: 330px; */
+    height: 140px;
+    font-size: 20px;
+    /* margin-left: 40px; */
+    margin: auto;
+    text-align: center;
+  }
+  .left-side-section7 button {
+    width: 215px;
+    font-size: 18px;
+    left: 0;
+    margin: auto;
+    top: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* .section7 .container {
+    flex-direction: column;
+    height: 150vh;
+  } */
+  .left-side-section7 h1 {
+    font-size: 26px;
+    width: 337px;
+    line-height: 47.5px;
+    /* height: 176px; */
+    /* margin-left: 0px; */
+    /* margin-top: 70px; */
+    /* text-align: end; */
+  }
+  .left-side-section7 p {
+    width: 330px;
+    height: 140px;
+    font-size: 15px;
+    /* margin-left: 40px; */
+  }
+  .left-side-section7 button {
+    /* display: block;
+    width: 200px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    left: 30px;
+    top: 0px; */
+  }
+}
+
+/* لو البشمهندس معجبهوش الزرار امسح كل اللى تحت */
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #ff8c42;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #ffffff;
+}
+
+/* .glow-on-hover:active:after {
+    background: transparent;
+} */
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  background: transparent;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

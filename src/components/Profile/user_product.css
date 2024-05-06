@@ -1,0 +1,185 @@
+.user-product{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #fff; */
+    height: 120vh;
+    
+    }
+ .dark-mode.user-product{
+    background-color: #fff;
+ }
+    .quantity h2{
+        font-size: 50px;
+        font-weight: 900;
+        color: #fff;
+        font-family: inter;
+        margin-top: 65px;
+    }
+    .quantity h2 span{
+        color: rgba(255,140,60);
+    }
+    .item-user{
+        background-color: #000;
+        display: flex;
+        gap: 25px;
+        margin-left: 50px;
+        margin-top: 100px;
+        color: #fff;
+       
+    }
+    .item-user:hover{
+       box-shadow: 0 0 20px #fff;
+        transition: 0.5s;
+    }
+    .dark-mode .item-user:hover{
+        box-shadow: 0 0 20px #000;
+    }
+    .item-user .inner2{
+        display: flex;
+        gap: 45px;
+    }
+    .item-user .inner2 h2{
+        font-size: 22px;
+        font-weight: 900;
+        color: #fff;
+        font-family: inter;
+        width: 174px;
+        margin-bottom: 20px;
+    }
+    .item-user .inner2 h3{
+        font-weight: 700;
+        font-size: 16px;
+        color: rgba(161, 161, 161, 1);
+        text-align: center;
+    }
+    .item-user .inner2 p{
+        color: rgba(161, 161, 161, 1);
+        font-weight: 300;
+        font-size: 16px;
+        font-family: inter;
+    }
+    .desc span{
+        position: relative;
+        left: 220px;
+        color: rgba(255,140,60);
+        font-size: 16px;
+        font-weight: 700;
+        font-family: inter;
+    } 
+    .desc span sup,s{
+        color: #fff;
+    }
+    .line-left{
+        width: 3px;
+        height: 600.04px;
+        background-color: #fff;
+        position: relative;
+        
+    }
+    .dark-mode .line-left{
+        background-color: #000;
+    }
+    .all-data2{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        margin-right: 200px;
+    }
+    .all-data2 .data2{
+        width: 300px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+    }
+    .all-data2 .data2 h3{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: inter;
+    }
+    .dark-mode  .all-data2 .data2 h3{
+        color: #000;
+    }
+    .dark-mode .all-data2 .data2 .title{
+        color: rgba(255, 140, 66, 1);
+    }
+    .all-data2 .data2 h3 span{
+        color: rgba(255, 140, 66, 1);
+    }
+    .all-data2 .data2 .title{
+        color: rgba(255, 140, 66, 1);
+        text-transform: capitalize;
+       
+    }
+    .line-bottom{
+        width: 85%;
+        height: 2px;
+        background-color: #fff;
+        position: relative;
+        top: -80px;
+        left: 100px;
+    }
+    .dark-mode .line-bottom{
+        background-color: #000;
+    }
+    @media screen and (max-width: 768px) {
+       .user-product{
+        height: auto;
+       }
+            .item-user{
+                background-color: #000;
+                display: flex;
+               
+              flex-direction: column;
+            }
+            .item-user .inner2{
+                display: flex;
+                flex-direction: column;
+            }
+            .line-left{
+                display: none;
+                
+            }
+            .item-user .inner2 img{
+                width: 100px;
+                height: 100px;
+            }
+            .quantity h2{
+               font-size: 20p;
+            }
+            .all-data2 .data2{
+                width: 100px;
+                height: 200px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 50px;
+            }
+            .desc{
+                display: flex;
+                flex-direction: column;
+            }
+            .desc span{
+        position: relative;
+        left: 170px;
+        color: rgba(255,140,60);
+        font-size: 16px;
+        font-weight: 700;
+        font-family: inter;
+    } 
+    .line-bottom{
+        width: 85%;
+        height: 2px;
+        background-color: #fff;
+        position: relative;
+        top: 10px;
+        margin-bottom: 25px;
+        left: 100px;
+    
+    }
+    }

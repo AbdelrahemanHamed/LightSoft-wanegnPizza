@@ -1,0 +1,134 @@
+.ang{
+    width: 100%;
+}
+.ang .inner{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.ang .inner img{
+    width: 450px;
+    height: 450px;
+}
+.ang .inner .data{
+    width: 450px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.ang .inner .data h1{
+    font-size: 18px;
+    color: #000;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    margin: 10px 0 10px -50px;
+  
+}
+.ang .inner .data .main-price{
+    margin: 35px 70px;
+}
+.ang .inner .data h3{
+    color: #555;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+.ang .inner .data p{
+    color: #555;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 80px;
+}
+.ang .inner .data .harte span{
+    color: orangered;
+    font-size: 20px;
+}
+.ang .inner .data h2{
+ margin: 35px 0 30px 80px;
+
+
+}
+.ang .inner .info-data p sup{
+color: red;
+}
+.ang .inner .info-data .inputs{
+    margin: 10px 70px;
+}
+select{
+    width: 350px;
+    height: 40px;
+    margin: 10px 70px;
+}
+.ang .inner .info-data .icons{
+    display: flex;
+    margin-left: 70px;
+}
+.ang .inner .info-data .icons i{
+  font-size: 12px;
+  margin-right: 15px;
+  padding: 2px 4px;
+  background-color: #eee;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ang .inner .info-data select:last-child{
+    margin-top: 0;
+}
+.ang .inner .info-data .extra{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 22px;
+text-align: start;
+margin-left: 70px;
+
+
+}
+
+.ang .inner .info-data .price{
+    color: #000;
+}
+.ang .inner .info-data .price h2{
+    margin: 10px 70px;
+}
+.ang .inner .info-data .price p{
+margin: 0 70px;
+}
+
+
+.outer{
+    width: 75%;
+    margin:120px auto;
+}
+.outer ul{
+    position: relative;
+    left: 32%;
+}
+.outer ul li {
+    display: inline-block;
+      margin-right: 50px;
+      font-size: 32px;
+}
+.outer ul li:nth-child(2){
+    padding-bottom: 4px;
+    border-bottom: solid 3px red;
+}
+.outer-image{
+    display: flex;
+justify-content: center;
+position: relative;
+left: 4%;
+gap: 75px;
+}
+.outer-image img{
+    margin-top: 45px;
+    width: 125px;
+    height: 125px;
+}

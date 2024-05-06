@@ -1,0 +1,196 @@
+.login{
+    position: fixed;
+  width: 100%;
+  height: 170%;
+  top: -230px;
+  left: 0;
+display: flex;
+justify-content: center;
+  background: rgba(212, 212, 212, 0.41);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(212, 212, 212, 0.3);
+
+  border-image-source: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.25) 5.88%,
+    rgba(255, 255, 255, 0.05) 55.88%
+  );
+  z-index: 19999990;
+}
+.dark-mode.login-container{
+    background-color: #fff;
+}
+.login-container{
+    place-self: center;
+    width: max(25vw,530px);
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fedIn .5s;
+    
+}
+#passShow{
+    position: relative;
+    left: 450px;
+    top: -50px;
+    cursor: pointer;
+}
+.forget-pass{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.forgetPass{
+    width: 100px;
+    background-color: #000;
+    border: solid 1px #fff;
+    height: 50px;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f46827;
+
+}
+.dark-mode.login-container .title i{
+    color: #000;
+}
+.login .title i{
+   font-size: 25px;
+   color: #fff;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dark-mode .inputs input{
+    color: #000;
+}
+.dark-mode .inputs input::placeholder{
+    color: #000;
+}
+.inputs input{
+    width: 100%;
+    padding: 6px;
+    border: none;
+    border-bottom: 1px solid #808080;
+    outline: none;
+    background:none;
+    color: #fff;
+    font-size: 16px;
+}
+.login-container .inputs input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.login button{
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background:tomato;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(155, 39, 11);
+    cursor: pointer;
+    transition: .3s;
+}
+.login button:hover{
+background-color: #fff;
+color: #f46827;
+transform: scale(1.2);
+}
+.dark-mode .condition{
+    color: #000;
+}
+.condition{
+    display: flex;
+    align-items: start;
+gap: 8px;
+margin-top: -10px;
+}
+.condition input{
+color: #fff;
+    margin-top: 5px;
+}
+ .dark-mode p.create{
+    color: #000;
+}
+.login p span{
+    color: tomato;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* select mr or mrs */
+
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 300px;
+    font-size: 14px;
+  }
+  
+  .radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+    background-color: #f46827;
+    font-weight: 600;
+    color: #fff;
+  }
+
+
+
+
+
+
+
+
+
+/* ============== */
+
+@media screen and (max-width: 768px) {
+    .login-container{
+        margin-right: 69px;
+    }
+}

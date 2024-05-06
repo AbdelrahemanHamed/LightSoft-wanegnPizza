@@ -1,0 +1,97 @@
+@import url(../../styles/themes.css);
+
+/* quicksand font  */
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"); */
+*{
+  text-transform: lowercase;
+}
+.menu-container {
+  border: 1px solid rgba(255, 255, 255, 0);
+  position: relative;
+  min-height: 100vh;
+  font-family: "Quicksand", sans-serif;
+}
+.menu-container h6 {
+  position: absolute;
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.625rem;
+  top: 0;
+  right: 8.8125rem;
+}
+
+.dark-mode .menu-container h6 {
+  color: white;
+}
+
+.menu-container .category-container {
+  margin: 11.3125rem 0 8.5625rem 8.125rem;
+}
+
+.menu-container .category-container h3 {
+  position: relative;
+  font-weight: 600;
+  font-size: 3.375rem;
+  line-height: 5.4687rem;
+  color: var(--main-font-color);
+  cursor: pointer;
+  z-index: 3;
+}
+
+.menu-container .sub-categories-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.menu-container .sub-category {
+  position: relative;
+  margin-right: 9.375rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.125rem;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 2;
+  color: black;
+}
+.menu-container .sub-category::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform: scale(0);
+  transition: 0.3s;
+}
+.dark-mode .menu-container .sub-category::after {
+  background-color: white;
+}
+.white-mode .menu-container .sub-category::after {
+  background-color: black;
+}
+.menu-container .sub-category:hover::after {
+  transform: scale(1);
+}
+.dark-mode .menu-container .sub-category {
+  color: white;
+}
+
+.menu-container img {
+  position: absolute;
+}
+.menu-container .bg1 {
+  top: 0;
+}
+
+.menu-container .bg2 {
+  top: 15.9375rem;
+  right: 0;
+  border: solid 3px red;
+}
+
+.menu-container .bg3 {
+  bottom: 0;
+  right: 0;
+}

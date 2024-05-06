@@ -1,0 +1,174 @@
+.total-ange{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+.pizza-card{
+    width: 600px;
+    height: 220px;
+    display: flex;
+    margin-bottom: 70px;
+
+}
+.pizza-card:hover{
+    box-shadow: 0 0 40px #ffffff;
+    border-radius: 5px;
+}
+
+.dark-mode .data-ang-title{
+  color: #000;
+}
+.pizza-card .inner{
+    width: 45%;
+    height: 271px;
+    min-height: 250px;
+    border-radius: 0px ;
+}
+.pizza-card .data-ang{
+    padding-left: 20px;
+  
+}
+.pizza-card .inner img{
+    width: 102%;
+    height: 209px;
+    border-radius:10px;
+    
+}
+.pizza-card .data-ang .data-ang-title{
+    font-size: 22px;
+   color: #000;  
+    width: 200px ;
+    height: 62px;
+    font-weight: 900;
+    line-height: 26.63px;
+    font-family: Inter;
+    margin-bottom: 8px;
+    text-align: left;
+}
+.pizza-card .data-ang .data-ang-title{
+    color: rgb(146, 140, 140);
+}
+.pizza-card .data-ang .data-ang-title::first-letter{
+    text-transform: none;
+}
+.white.pizza-card .data-ang .data-ang-title{
+   
+    padding-top: 10px;
+   
+}
+.pizza-card .Ang-btn{
+    width: 120px;
+    height: 42px;
+    border-radius: 0px;
+    border: 1px solid rgba(255, 140, 66, 1);
+    font-family: Inter;
+    font-size: 16px;
+    color: rgba(255, 140, 66, 1);
+    line-height: 19.36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    top: -170px;
+    transition: .3s;
+    left: 120px;
+    cursor: pointer;
+}
+.pizza-card .Ang-btn:hover{
+    background-color: rgba(255, 140, 66, 1); 
+    color: #fff;
+    border: #fff solid;
+}
+.pizza-card .data-ang h3{
+    font-weight: 700;
+    font-family: Inter;
+    font-size: 16px;
+    color: rgba(161, 161, 161, 1);
+    line-height: 19.36px;
+    text-transform: none;
+    margin-left: 45px;
+    margin-bottom: 8px;
+    text-align: center;
+
+}
+.pizza-card .data-ang p{
+    font-family: Inter;
+    font-size: 16px;
+    color: rgba(161, 161, 161, 1);
+    line-height: 19.36px;
+    font-weight: 300;
+    margin-left: 8px;
+  
+}
+
+.pizza-card .data-ang span{
+    font-family: Inter;
+    font-size: 16px;
+    color:rgba(255, 140, 66, 1);
+    position: relative;
+    font-weight: 700;
+    line-height: 19.36px;
+    left: 70%;
+    top: 10px;
+}
+.pizza-card .data-ang span sup{
+    font-size: 10px;
+    color: gray;
+}
+.pizza-card .data-ang span s{
+    font-size: 16px;
+    color: gray;
+}
+ 
+.white{
+    
+    background-color: rgb(0, 0, 0);
+    border: solid 1px #000;
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+   
+}
+.white .data span sup{
+    color: #ffffff;
+}
+.white .data span s{
+    color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+    .pizza-card{
+        width: 340px;
+        height: auto;
+        flex-direction: column;
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .pizza-card .inner img{
+        width: 327px;
+        height: 230px;
+    }
+    .pizza-card .data .data-title{
+        font-size: 18px;
+    }
+    .pizza-card .data-ang span {
+        left: 20px;
+    }
+    .pizza-card .data h1{
+      margin-left: 100px;
+    }
+    .pizza-card .data h3{
+        text-align: center;
+    
+    
+    }
+    .total-ange{
+        width: 100%;
+       
+        grid-template-columns: 2fr;
+        column-gap: 50px;
+    }
+}

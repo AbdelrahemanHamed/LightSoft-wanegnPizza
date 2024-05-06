@@ -1,0 +1,281 @@
+:root {
+  --main-bg-color: #151515;
+  --main-font-color: #ff8c42;
+  --second-font-color: #fff;
+ 
+}
+
+.dark-mode {
+  --main-bg-color: #151515;
+  --main-font-color: #ff8c42;
+  --second-font-color: #fff;
+}
+
+.white-mode {
+  --main-bg-color: #fff;
+  --main-font-color: #ff5b00;
+  --second-font-color: #7b3000;
+
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+3D&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+.navbar {
+  width: 100%;
+  height: 130px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 998;
+  transition: 0.6s;
+  background-color: rgba(212, 212, 212, 0.1);
+  backdrop-filter: blur(15px);
+}
+.navbar .container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar img {
+  width: 100px;
+  height: 120px;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.6s;
+  position: relative;
+}
+nav ul li:not(:last-of-type) {
+  margin-right: 30px;
+}
+nav ul li:not(:nth-child(5)):not(:nth-child(6))::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #ff5b00;
+  left: 0;
+  bottom: -2px;
+  transition: 0.6s;
+}
+
+nav ul li:not(li:has(a.active)):hover::after {
+  width: 100%;
+}
+nav ul li a {
+  font-size: 20px;
+  color: var(--main-font-color);
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+nav ul li a.active {
+  color: #fff;
+  padding: 8px 12px;
+  background-color: #eb7a34;
+  border-radius: 5px;
+}
+nav ul li img.car {
+  width: 46px;
+  height: 38px;
+  position: relative;
+  top: 27px;
+}
+.car {
+  font-size: 22px;
+  color: var(--main-font-color);
+  position: relative;
+}
+.length {
+  position: absolute;
+  top: -13px;
+  left: -9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #cc0000;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  color: #ffffff;
+}
+nav ul li a.btn {
+  padding: 10px 25px;
+  background-color: var(--second-font-color);
+  color: var(--main-font-color);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+nav ul li a.btn:hover {
+  box-shadow: 0 0 40px #ff8c42;
+}
+.activeLink {
+  padding-bottom: 2px;
+  border-bottom: solid 2px #fff;
+  color: #fff;
+}
+.btn-login{
+
+    /* position: fixed; */
+   background-color: transparent;
+    cursor: pointer;
+    z-index: 10000;
+    border: none;
+}
+.btn-login img:hover{
+transform: scale(1.1);
+}
+.viewProfile{
+  font-size: 40px;
+  color: #eb7a34;
+  /* position: absolute; */
+  top: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  /* margin-top: 30px; */
+
+}
+#bars {
+  font-size: 22px;
+  color: var(--main-font-color);
+  display: none;
+  cursor: pointer;
+}
+
+.all-service{
+  z-index: 1000;
+  cursor: pointer;
+  width: 100px;
+  height:40px;
+  border:none;
+  outline:none;
+  background-color: rgb(255, 151, 24);
+  color:#fff;
+  border-radius: 10px;
+  font-size: 22px;
+  transition: .4s;
+}
+.all-service:hover{
+  box-shadow: 0 0 25px #fff;
+  transform: scale(1.1);
+}
+.show-logo{
+  
+  height: 150px;
+  background-color: #fff;
+  width: 100px;
+  border-radius: 30px;
+  position:fixed;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  left: 78%;
+  top: 100px;
+  z-index: 222222;
+  transform: scale(0);
+  transition: .3s;
+}
+.show-logo2{
+  transform: scale(1.2);
+}
+
+.navbar-change {
+  background-color: rgba(212, 212, 212, 0.1);
+  border-radius: 20px;
+  width: 100%;
+  transition: 0.6s;
+  backdrop-filter: blur(15px);
+  position: fixed;
+  z-index: 1000;
+}
+.navbar-change ul li a.btn {
+  background-color: var(--main-font-color);
+  color: var(--second-font-color);
+}
+
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    position: fixed;
+    z-index: 1000;
+  }
+  .navbar nav ul {
+    position: absolute;
+    top: 92%;
+    left: 5px;
+    right: 0;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    background-color: var(--main-bg-color);
+    padding: 1rem 0.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.2s linear;
+  }
+  #bars {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    left: 300px;
+  }
+  .navbar nav ul.active-bar{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  .all-service{
+  
+    cursor: pointer;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 30px;
+    cursor: pointer;
+    margin-bottom: 35px;
+    width: fit-content;
+  }
+  .navbar img {
+    width: 95px;
+    height: 95px;
+  }
+  nav ul li a.btn {
+    position: relative;
+    left: 0;
+  }
+  nav ul li:last-of-type {
+    margin-left: 45px;
+  }
+  nav ul li:nth-child(5):not(:nth-child(6))::after {
+    display: none;
+  }
+  .show-logo{
+    height: 50px;
+    background-color: #fff;
+    width: 185px;
+    border-radius: 30px;
+    position:fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    left: 40%;
+    top: 58%;
+  }
+ 
+}

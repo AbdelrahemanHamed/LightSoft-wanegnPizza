@@ -1,0 +1,244 @@
+:root {
+  --main-bg-color: #151515;
+  --main-font-color: #ff8c42;
+  --second-font-color: #fff;
+}
+
+.dark-mode {
+  --main-bg-color: #151515;
+  --main-font-color: #ff8c42;
+  --second-font-color: #fff;
+  background-color: var(--main-bg-color);
+}
+
+.white-mode {
+  --main-bg-color: #fff;
+  --main-font-color: #ff5b00;
+  --second-font-color: #7b3000;
+  background-color: var(--main-bg-color);
+}
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 10;
+  transition: background-color 0.0s linear;
+  animation: bg linear .3s infinite ease-in-out;
+}
+@keyframes bg {
+  0%{
+    opacity: .3;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+
+.hero-section .hero-main-section {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  left: 70px;
+  align-items: center;
+  z-index: 100;
+  color: var(--main-font-color);
+  animation: FedIn ease-in 0.8s 1 both;
+
+}
+.swiper-button-prev::after {
+  color: #ff5b00;
+}
+.swiper-button-next::after {
+  color: #ff5b00; 
+}
+
+
+
+.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: rgb(199, 167, 167)  !important; /* Customize dot color */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff5b00  !important; /* Customize active dot color */
+}
+
+
+
+
+.Tilte-home {
+  font-size: 100px;
+}
+.hero-main-section .text h1 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: start;
+  animation: leftSide forwards ease-in 1s 1;
+}
+
+@keyframes FedIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes leftSide {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes topSide {
+  0% {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
+.hero-section::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.hero-main-section .text h3 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: topSide forwards ease-in 1.7s 1;
+color: #ff5b00;
+}
+.hero-main-section .home-btn {
+  width: 200px;
+  height: 68px;
+  margin-top: 50px;
+  border: none;
+  background-color: var(--main-font-color);
+  color: var(--second-font-color);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+  animation: leftSide forwards ease-in 1.4s 1;
+}
+.hero-main-section .home-btn:hover {
+  box-shadow: 0 0 40px #fff;
+}
+
+.toggle-btn {
+  position: fixed;
+ 
+  z-index: 1000;
+  right: 35px;
+  bottom: 35px;
+}
+.toggle-btn img {
+  width: 60px;
+  cursor: pointer;
+  height: 60px;
+   
+}
+.toggle-btn .white-image-mode{
+  animation: spin 5s linear infinite;
+}
+.toggle-btn .dark-image-mode{
+  animation: shadow 5s linear infinite;
+}
+
+
+@keyframes shadow {
+  0%{
+ filter: drop-shadow( 0 0 50px #fff); 
+  }
+  100%{
+    filter: drop-shadow( 0 0 50px red); 
+  }
+}
+
+
+
+.slide-bg {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -100%);
+}
+.slide-bg span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--second-font-color);
+  margin-right: 10px;
+}
+.WhatsappIcon {
+  position: fixed;
+  z-index: 18999;
+ 
+  bottom: 135px;
+  right: 30px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.WhatsappIcon:hover {
+  transform: scale(1.1);
+}
+
+/* media screen */
+
+@media screen and (max-width: 1024px) {
+  .hero-main-section .text h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .hero-main-section .text .Tilte-home {
+    font-size: 40px;
+  }
+  .hero-section .hero-main-section .text h3 {
+    font-size: 1.2rem;
+  }
+  .toggle-btn {
+    position: fixed;
+    /* left: 5px; */
+    z-index: 1000;
+    /* top: 52%; */
+    right: 85px;
+  }
+  .WhatsappIcon {
+    /* right: 235px; */
+    right: 75px;
+  }
+}

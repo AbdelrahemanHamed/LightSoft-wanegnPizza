@@ -1,0 +1,24 @@
+.coming-soon-page-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 5.375rem 6.3125rem; */
+  height: 100vh;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+.white-mode .coming-soon-page-container {
+  color: black;
+}
+h1 {
+  width: 46.875rem;
+  font-weight: 600;
+  line-height: 7.5rem;
+  /* font-size: 6rem; */
+  font-size: 5rem;
+  color: var(--main-font-color);
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  /* margin-left: 5.25rem; */
+}

@@ -1,0 +1,209 @@
+:root {
+  --main-bg-color: #151515;
+  --main-font-color: #ff8c42;
+  --second-font-color: #fff;
+}
+
+.fourth-section {
+  background-color: var(--second-font-color);
+ 
+  padding: 50px 0;
+  /* position: relative; */
+  font-family: "Quicksand", sans-serif;
+  margin-top: -100px;
+}
+.fourth-section .container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.dark-mode {
+  background-color: var(--main-bg-color);
+}
+
+.fourth-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.375rem;
+  border-radius: 10px;
+  border-width: 3px, 1px, 1px, 3px;
+  border-style: solid;
+  border-color: var(--main-bg-color);
+  width: 550px;
+  height: 49rem;
+  z-index: 3;
+  color: var(--main-bg-color);
+  backdrop-filter: blur(5px);
+  position: relative;
+  bottom: 150px;
+  /* margin-bottom: 150px; */
+}
+
+.fourth-section h3 {
+  font-weight: 700;
+  font-size: 3.4rem;
+  color: #ff8c42;
+  font-family: "Kaushan Script";
+  line-height: 3.125rem;
+  margin-bottom: 20px;
+}
+.fourth-section p {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 2.09375rem;
+  margin-bottom: 7rem;
+}
+
+.fourth-section .form-control {
+  width: 120%;
+  display: flex;
+  padding: 0 2.3rem;
+  margin: 10px 40px;
+}
+.fourth-section .form-control label {
+  font-weight: 600;
+  font-size: 1.3125rem;
+}
+.dark-mode.fourth-section form {
+  background-color: #555;
+  color: #fff;
+  border: none;
+}
+.dark-mode .form-control label {
+  color: var(--second-font-color);
+}
+.fourth-section .form-control input {
+  flex-grow: 1;
+  border: none;
+  margin-left: 20px;
+  padding: 15px 10px;
+  background-color: rgb(163, 160, 160);
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+}
+.fourth-section .form-control input::placeholder {
+  color: #151515;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.dark-mode.fourth-section .form-control input {
+  background-color: #fff;
+  color: #151515;
+}
+.dark-mode.fourth-section .form-control input::placeholder {
+  color: #8b8484;
+}
+
+.fourth-section .btn-reservation {
+  background-color: rgb(255, 140, 60);
+  outline: none;
+  border: none;
+  width: 170px;
+  color: #fff;
+  height: 52px;
+  font-size: 24px;
+  border-radius: 20px;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.fourth-section .btn-reservation:hover {
+  box-shadow: 0 0 40px #ff8c42;
+  scale: 1.1;
+}
+.white-mode .fourth-section .btn-reservation {
+  color: black;
+}
+.date-time {
+  width: 200px;
+}
+
+.fourth-section img {
+  position: absolute;
+}
+.fourth-section .bg1 {
+  left: 38%;
+  top: -70px;
+  width: 451px;
+  height: 482px;
+  transform: rotate(15deg);
+}
+.fourth-section .bg2 {
+  width: 471px;
+  height: 778px;
+  left: 5px;
+  top: -80px;
+}
+.fourth-section .bg3 {
+  right: 1rem;
+  top: 82%;
+  width: 270.03px;
+  height: 220.68px;
+  transform: rotate(-10.56deg);
+}
+
+.fourth-section .bg4 {
+  width: 451px;
+  height: 482px;
+  top: 350px;
+  left: 407px;
+  transform: rotate(0.56deg);
+}
+@media (max-width: 767px) {
+  .fourth-section form {
+    position: relative;
+    /* left: 80px; */
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+    padding: 0 0rem 0 0;
+    font-size: 16px;
+    margin-top: 120px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .fourth-section img {
+    display: none;
+  }
+  .fourth-section h3 {
+    font-size: 2rem;
+  }
+  .fourth-section p {
+    font-size: 18px;
+  }
+  .fourth-section form {
+    position: relative;
+    /* left: 80px; */
+    /* width: 440px; */
+    margin: auto;
+    padding: 0 0rem 0 0;
+    font-size: 16px;
+    margin-top: 120px;
+  }
+  .fourth-section .form-control {
+    width: 100%;
+  }
+  .fourth-section .form-control input {
+    padding: 10px 30px;
+    color: var(--main-bg-color);
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+  .fourth-section .form-control label {
+    font-size: 1rem;
+  }
+  .form-control {
+    flex-direction: column;
+  }
+  .btn {
+    position: absolute;
+    top: 65%;
+    left: 60px;
+  }
+  .fourth-section p {
+    margin-bottom: 1rem;
+  }
+}
